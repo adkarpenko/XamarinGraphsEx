@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinGraphsEx"
+             xmlns:oxy="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"
+             x:Class="XamarinGraphsEx.MainPage">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Master" BackgroundColor="#b9f6ca">
+            <ContentPage.Content>
+                <StackLayout Padding="5,30,5,5">
+                    <Button Text="Получить отчет по чекам" Clicked="Button1_Click"></Button>
+                    <Button Text="Проверить чек" Clicked="Button2_Click"></Button>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <ContentPage >
+            <ContentPage.Content>
+                <Label Text="DetailPage" VerticalOptions="Center" HorizontalOptions="Center">
+                </Label>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+
+
+</MasterDetailPage>

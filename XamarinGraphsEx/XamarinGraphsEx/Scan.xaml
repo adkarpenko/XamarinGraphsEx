@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:oxy="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"
+             mc:Ignorable="d"
+             x:Class="XamarinGraphsEx.Scan">
+
+    <StackLayout Orientation="Vertical">
+        <ScrollView Orientation="Both">
+            <StackLayout Orientation="Vertical">
+                <Label Text="Xamarin Forms - OxyPlot Bar Graphs Application" Margin="2"  />
+                <StackLayout Orientation="Horizontal">
+                    
+                    <Button  x:Name="btnPieChart" Text="Pie Chart Form" Margin="2" HorizontalOptions="Start" 
+                         VerticalOptions="Start" Clicked="btnPieCharts_Clicked"/>
+                </StackLayout>
+                <oxy:PlotView Model="{Binding GraphModel}" HorizontalOptions="CenterAndExpand" 
+                              VerticalOptions="StartAndExpand" Margin="2"
+  HeightRequest="500" WidthRequest="500"/>
+
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
